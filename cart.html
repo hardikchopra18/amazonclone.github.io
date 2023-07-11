@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>checkout</title>
+    <link rel="stylesheet" href="cart.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="nav-bar">
+        <a href="amazon.html">
+          <div class="logo-cart">
+            <img src="./images/amazon-logo (1).png" alt="logo" />
+          </div>
+        </a>
+        <div class="middle-heading">
+          <p>checkout (<span class="head-quantity">0 items</span>)</p>
+        </div>
+        <div class="secured-logo">
+          <img src="./images/checkout-lock-icon.png" alt="lock-icon" />
+        </div>
+      </div>
+      <div class="main-container">
+        <div class="left-section">
+          <div class="top-section">
+            <h5 class="main-h5">Review your order</h5>
+            <div class="no-products">
+              <div class="cart-empty">your cart is empty</div>
+              <a href="index.html">
+                <button class="view-products-btn">view products</button>
+              </a>
+            </div>
+          </div>
+          <div class="product-cards js-card-container">
+            <div class="selected-product">
+              <div class="delivery-date">delivery date:Monday,june19</div>
+              <div class="product">
+                <div class="selected-product-img">
+                  <img src="./images/p-1.jpg" alt="image" />
+                </div>
+                <div class="selected-product-desc">
+                  <div class="selected-product-name">
+                    6 Piece White Dinner Plate Set
+                  </div>
+                  <div class="selected-product-price">$20.67</div>
+                  <div class="selected-product-quantity">
+                    quantity:
+                    <span class="selected-product-q">1</span>
+                    <div class="selelected-product-update-option">
+                      <a>update</a>
+                      <a>delete</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="selected-product-delivery-date">
+                  <h6>choose delivery option:</h6>
+                  <div class="option1">
+                    <input id="opt1" type="radio" name="delivery-opt" />
+                    <label for="opt1"
+                      >tuesday,june27
+                      <span class="product-delivery-charges"
+                        >Free shipping</span
+                      ></label
+                    >
+                  </div>
+                  <div class="option2">
+                    <input id="opt2" type="radio" name="delivery-opt" />
+                    <label for="opt2"
+                      >wednesday,june28
+                      <span class="product-delivery-charges"
+                        ><span class="extra-delivery-charges">$4.99</span
+                        >-shipping</span
+                      ></label
+                    >
+                  </div>
+                  <div class="option3">
+                    <input id="opt3" type="radio" name="delivery-opt" />
+                    <label for="opt3"
+                      >thursday,june29
+                      <span class="product-delivery-charges"
+                        ><span class="extra-delivery-charges">$9.99</span
+                        >-shipping</span
+                      ></label
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="payment-method">
+          <h6>order Summary</h6>
+          <div class="total-bill">
+            <div class="items-price">
+              <div class="items-quantity:">items (<span class="head-quantity">0</span>)</div>
+              <div class="price-of-added-products js-price-products">$0</div>
+            </div>
+            <div class="shipping-price">
+              <div class="shipping">shipping&handling:</div>
+              <div class="shipping-charges">$0.00</div>
+            </div>
+            <div class="total-excluding-taxes">
+              <div class="total">total before tax:</div>
+              <div class="total-charges">$31.85</div>
+            </div>
+            <div class="total-tax">
+              <div class="Etax">Estimates tax(10%):</div>
+              <div class="totalWithTax">$3.19</div>
+            </div>
+          </div>
+          <div class="order-total">
+            <div class="total-price">
+              <span>order total:</span>
+              <span>$35.04</span>
+            </div>
+            <div class="paypal">
+              <label for="paypal">use paypal</label>
+              <input name="paypal" type="checkbox" />
+            </div>
+            <button>place your order</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="cart.js"></script>
+    <script src="amazon.js"></script>
+    <script src="price.js"></script>
+  </body>
+</html>
